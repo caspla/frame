@@ -1,0 +1,14 @@
+<a href="/users/create" class="btn btn-primary float-right">Create User</a>
+<h1>Users</h1>
+
+<?php if ($this->users) { ?>
+<ul class="list-group">
+    <?php foreach ($this->users as $user) { ?>
+    <li class="list-group-item">
+        <a href="/users/edit/<?= $user->id; ?>"><?= $user->lastname; ?>, <?= $user->firstname; ?></a>
+    </li>
+    <?php } ?>
+</ul>
+<?php } else { ?>
+<p class="alert alert-warning">There are no users to show here.</p>
+<?php } ?>
