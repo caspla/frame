@@ -10,7 +10,7 @@
     ```apacheconfig
        <VirtualHost *:80>
          DocumentRoot "/var/www/myapp/public"
-         ServerName frame.pascal.dev
+         ServerName myapp.dev
          <Directory "/var/www/myapp/public">
              Options Indexes FollowSymLinks
              AllowOverride All
