@@ -8,15 +8,15 @@
 1. Create VirtualHost that points to the "public" directory of the app
     
     ```apacheconfig
-       <VirtualHost *:80>
-         DocumentRoot "/var/www/myapp/public"
-         ServerName myapp.dev
-         <Directory "/var/www/myapp/public">
-             Options Indexes FollowSymLinks
-             AllowOverride All
-             Require all granted
-         </Directory>
-        </VirtualHost>
+    <VirtualHost *:80>
+     DocumentRoot "/var/www/myapp/public"
+     ServerName myapp.dev
+     <Directory "/var/www/myapp/public">
+         Options Indexes FollowSymLinks
+         AllowOverride All
+         Require all granted
+     </Directory>
+    </VirtualHost>
     ```
     
 2. Configure database connection in "config.php"
